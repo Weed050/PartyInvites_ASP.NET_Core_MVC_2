@@ -23,8 +23,8 @@ namespace PartyInvites.Controllers
         }
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse) {
-            //Do zrobienia: wyślij zawartość guestResponse do organizatora przyjęcia
-            return View();
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
     }
 }
