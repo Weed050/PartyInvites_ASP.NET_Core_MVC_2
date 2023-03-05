@@ -16,5 +16,6 @@ namespace PartyInvites.Models
 
         [Required(ErrorMessage = "Proszę określić, czy weźmiesz udział.")]
         public bool? WillAttend { get; set; }
+        // bool WillAttend is setted as null-able property to check if user correctly choose one of 2 options
     }
 }
