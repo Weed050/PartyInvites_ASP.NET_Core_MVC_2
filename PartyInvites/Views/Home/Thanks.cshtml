@@ -9,9 +9,10 @@
 <html lang="pl-PL">
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     <title>Dziękujemy</title>
 </head>
-<body>
+<body class="text-center">
     <p>
         <h1>
             Dziękujemy, @Model.Name!
@@ -25,6 +26,6 @@
             @:Przykro nam, że się nie zjawisz, ale dziękujemy za informację.
         }
     </p>
-    <p>Kliknij <a asp-action="ListResponses">tutaj</a>, aby wyświetlić listę gości.</p>
+    <p>Kliknij <a class="nav-link" asp-action="ListResponses">tutaj</a>, aby wyświetlić listę gości.</p>
 </body>
 </html>

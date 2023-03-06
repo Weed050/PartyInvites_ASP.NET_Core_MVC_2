@@ -7,16 +7,19 @@
 <head>
     <html lang="PL">
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     <title>Przyjęcie sylwestrowe</title>
 </head>
 <body>
-    <div>
-       @ViewBag.greeting 
-       <p> 
-           Zapraszamy na wspaniałe przyjęcie. <br />
-           (Do zrobienia: trzeba to ulepszyć, dodać zdjęcia i inne takie).
-       </p>
-       <a asp-action="RsvpForm"> Wyślij RSVP </a>
-    </div>
+        <div class="text-center">
+            <h1>
+                Zapraszamy na wspaniałe przyjęcie! <br />
+            </h1>
+          
+            <h2>
+                Ty też zostałeś zaproszony
+            </h2>
+            <a asp-action="RsvpForm" class="btn btn-primary"> Wyślij RSVP </a>
+        </div>
 </body>
 </html>

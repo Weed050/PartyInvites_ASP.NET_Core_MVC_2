@@ -7,8 +7,8 @@ namespace PartyInvites.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Proszę podać adres e-mail.")]
-        [RegularExpression(".\\@.+\\..+",
-            ErrorMessage ="Proszę podać prawidłowy adres e-mail.")]
+        //[RegularExpression(".\\@.+\\..+",
+        //    ErrorMessage = "Proszę podać prawidłowy adres e-mail.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Proszę podać numer telefonu.")]
